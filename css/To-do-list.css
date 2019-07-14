@@ -1,0 +1,53 @@
+*{
+	margin:0;
+	padding: 0;
+	font-family:"montserrat",sans-serif;
+	box-sizing: border-box;
+}
+body{
+	background-image: linear-gradient(120deg,#487eb0,#fbc531);
+
+	/* min-height:設定box的最小高度(box會直接呈現設定的最小高度(例如:若內容的高度只有兩列,box的高度顯示為3列) */
+	/* vh代表螢幕可視範圍的百分比高度 */
+	min-height: 100vh;
+}
+
+.container{
+	max-width: 800px;
+	margin:auto;
+	padding: 10px;
+}
+
+.txtb{
+	width: 100%;
+	border:none;
+	border-bottom: 2px solid #000;
+	background: none;
+	padding: 10px;
+	/* 在border外,還有一個outline邊框 */
+	outline: none;
+	font-size: 18px;
+}
+h3{
+	margin:10px 0;
+}
+.task{
+	width:100%;
+	background:rgba(255,255,255,0.5);
+	padding:18px;
+	/* margin property has two values(Top&Bottom,Left&Right) */
+	margin:6px 0;
+	/* 若是希望圖片或文字呈現在一定的範圍內的話，便可以透過CSS的overflow屬性 */
+	/* visible:若文字或圖片超出box,則隱藏超出的部份;hidden:若文字或圖片超出box,則隱藏超出的部份; */
+	overflow: hidden;	
+}
+.task i{
+	/* float:用來定義區塊的浮動，可以設定為靠左浮動或靠右浮動,在 CSS 設計上任何元素都是可以浮動的，像是 DIV 區塊、span、圖片 ... 等 */
+	float:right;
+	margin-left: 20px;
+	cursor: pointer;
+}
+.comp .task{
+	background:rgba(0,0,0,0.5);
+	color:#fff;
+}
